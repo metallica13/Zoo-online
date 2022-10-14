@@ -81,6 +81,9 @@ body {
 }
 
 .header {
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: black;
 }
 
@@ -93,11 +96,11 @@ body {
 }
 
 .header-logo {
-  margin-right: 68px;
+  margin-right: 63px;
 }
 
 .header-nav {
-  /* margin-right: 438px; */
+  margin-right: 438px;
 }
 .header-list {
   display: flex;
@@ -108,8 +111,11 @@ body {
   margin-right: 58px;
 }
 
+.header-list-item:last-child {
+  margin-right: 0;
+}
+
 .header-copyright {
-  margin-left: 430px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
