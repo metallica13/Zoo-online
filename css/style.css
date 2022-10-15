@@ -85,6 +85,8 @@ body {
   left: 0;
   width: 100%;
   background-color: black;
+  padding: 14px 0px;
+  position: fixed;
 }
 
 .header-wrapper {
@@ -135,4 +137,73 @@ body {
   /* or 22px */
 
   color: #ffffff;
+}
+
+/* Intro */
+
+.intro {
+  background: url(../img/intro-background.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+.wrapper-intro {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.intro-title-container {
+  max-width: 500px;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 86px;
+  padding-bottom: 100px;
+}
+
+.intro-title-container::before {
+  content: '';
+  position: absolute;
+  width: 465px;
+  height: 465px;
+  left: calc(50% - 465px / 2 + 239.5px);
+  top: 92px;
+
+  /* orange */
+
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 50%;
+}
+.intro-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 106.496px;
+  line-height: 75%;
+  /* or 80px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.post-title-link {
+  display: inline-block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 25px;
+  padding: 16px 70px;
 }
