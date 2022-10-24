@@ -59,6 +59,7 @@ b {
 img {
   max-width: 100%; /* чтоб не было больше контейнера, в котором оно находится */
   height: auto; /* чтоб сжибалось пропорционально по высоте */
+  /* object-fit: cover; */
 }
 
 a {
@@ -145,6 +146,7 @@ body {
   background: url(../img/intro-background.jpg) no-repeat center;
   background-size: cover;
   padding-top: 80px;
+  /* margin-bottom: 140px; из-за цветов справа пришлось задать паддинг backstage */
 }
 
 .wrapper-intro {
@@ -207,3 +209,374 @@ body {
   border-radius: 25px;
   padding: 16px 70px;
 }
+
+/* Backstage */
+
+.backstage {
+  padding-top: 140px;
+  background: url(../img/backstage-flower-pic.jpg) no-repeat right top 12px;
+  margin-bottom: 180px;
+}
+
+.backstage-wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.backstage-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.backstage-image-container {
+  width: calc(100vw * (609 / 1600));
+  aspect-ratio: 609/403;
+}
+
+.backstage-desc {
+  max-width: 465px;
+}
+
+.backstage-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  /* or 58px */
+
+  color: #333b41;
+  margin-bottom: 20px;
+}
+
+.backstage-title-desc {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  /* or 21px */
+
+  color: #333b41;
+  margin-bottom: 54px;
+}
+
+.backstage-title-small {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+
+  color: #333b41;
+  margin-bottom: 34px;
+}
+
+.backstage-title-small-desc {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: #333b41;
+}
+
+/* Animals */
+
+.animals {
+  padding-bottom: 100px;
+  background: url(../img/palm.jpg) no-repeat bottom left,
+    url(../img/strelitzia.jpg) no-repeat bottom right;
+}
+
+.background-left-image {
+}
+
+.background-right-image {
+}
+
+.animals-wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.animals-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.arrow-left {
+  min-width: 62px;
+  height: 62px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 20px;
+  line-height: 62px;
+
+  /* orange */
+
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+}
+
+.arrow-right {
+  display: block;
+  min-width: 62px;
+  height: 62px;
+  border: none;
+  border-radius: 50%;
+  margin-left: 20px;
+
+  /* orange */
+
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+}
+
+.animal-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 30px;
+}
+
+.animal-card {
+  border: 1px solid #fa6f32;
+  border-radius: 5px;
+}
+
+.animal-card-img img {
+  border-radius: 5px 5px 0 0;
+}
+
+.animal-card-desc {
+  padding: 8px 0 14px 16px;
+}
+
+.animal-card-desc-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.animal-card-desc-native {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  /* identical to box height, or 18px */
+
+  color: #000000;
+}
+
+.animal-choose {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  /* position: relative;
+  left: 50%;
+  transform: translate(-50%, 0); */
+  padding: 16px 40px;
+  background: #fe9013;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+/* Pick */
+
+.pick {
+  padding: 69px 0 100px;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  opacity: 0.9;
+  margin-bottom: 140px;
+}
+
+.pick-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 40px 0 100px;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;
+}
+
+.pick-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  /* identical to box height, or 58px */
+
+  text-align: center;
+
+  color: #fe9013;
+  padding-bottom: 30px;
+}
+.pick-text-content {
+  padding-left: 99px;
+  padding-right: 55px;
+}
+
+.pick-subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+
+  color: #333b41;
+  margin-bottom: 40px;
+}
+
+.pick-covid {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+
+  color: #333b41;
+  margin-bottom: 10px;
+}
+
+.pick-help {
+  max-width: 863px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  /* or 21px */
+
+  color: #333b41;
+  margin-bottom: 60px;
+}
+
+.pick-help-link {
+  color: #333b41;
+  border-bottom: 1px solid #fe9013;
+}
+
+.second-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  /* identical to box height, or 47px */
+
+  color: #333b41;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pick-cards {
+  display: flex;
+  /* padding: 0 99px 60px 99px; */
+  max-width: 760px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.pic-container {
+  width: 168px;
+  height: 168px;
+
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.pick-card {
+  max-width: 168px;
+}
+.pick-card-arrow {
+  width: 69px;
+  height: 35px;
+  padding-top: 150px;
+  background: url(../img/svg/pick/arrow.svg) no-repeat center;
+}
+
+.card {
+  background: url(../img/svg/pick/1.svg) #ffffff no-repeat center;
+}
+.hand {
+  background: url(../img/svg/pick/2.svg) #ffffff no-repeat center;
+}
+.monkey {
+  background: url(../img/svg/pick/3.svg) #ffffff no-repeat center;
+}
+
+/* .pick-link-container {
+  text-align: center;
+} */
+.pick-link {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  /* position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); */
+  padding: 16px 40px;
+  background: #fe9013;
+  border-radius: 25px;
+
+  border: none;
+  max-width: 297px;
+}
+
+/* Testimonials */
